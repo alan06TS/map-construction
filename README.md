@@ -1,1 +1,1 @@
-# map-construction-based-on-stamenmap
+# map-construction

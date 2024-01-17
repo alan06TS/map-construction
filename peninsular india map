@@ -4,6 +4,7 @@
 ## shapefiles downloaded from https://geographicalanalysis.com/
 ## make a folder as working directory and place csv files containing geocoordinates
 ## in the same folder place the shapefiles
+## copy folder path
 
 # install ggmap, ggsn and sf
 devtools::install_github("stadiamaps/ggmap")
@@ -36,7 +37,7 @@ m=get_stadiamap(bbox = c(left = 67,
                 maptype = c("stamen_terrain_background"),
                 color = c("color"))
 
-# setting working directory
+# copy folder path and set working directory
 path= readClipboard()
 setwd(path)
 location=getwd()

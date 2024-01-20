@@ -48,9 +48,9 @@ shapefile= st_read(paste0(location, "\\India_State_Boundary.shp"))
 shapefile_df = as_Spatial(shapefile)
 
 
-# full csv files in the working directory
-file=dir(path=location, pattern="Justicia glauca.csv")
-# reading files
+# csv file in the working directory
+file=dir(path=location, pattern="file_name.csv")
+# reading file
 open_file=read.csv(file)
 # species name in title
 title = open_file[1,1]
